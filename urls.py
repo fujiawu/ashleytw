@@ -9,9 +9,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'ashleytw.views.home', name='home'),
+    url(r'^$', 'ashleytw.views.home', name='home'),
     # url(r'^ashleytw/', include('ashleytw.foo.urls')),
-    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/favicon1.ico')),
+    url(r'^favicon\.ico$', RedirectView.as_view(url='/static/sitemedia/favicon1.ico')),
     # Uncomment the admin/doc line below to enable admin documentation:
     url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
