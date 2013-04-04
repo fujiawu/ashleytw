@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<title>Ashley空间</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link rel="stylesheet" href="http://ashleytw.com/static/css/style1.css" type="text/css" media="all">
+</head>
+
+<body>
+
+<div id="container"> <!-- a big container -->
+
+ <div id="header">
+  <p align="center">Hello欢迎光临</p>
+ </div>
+
+ <div id="menu">
+   {% block menu_material %}{% endblock %}
+ </div>
+ 
+ <div id="content">
+   {% block content_material %}{% endblock %}
+ </div>
+
+ <div id="footer">
+   <p> Copyright © ashleytw.com </p>
+ </div>
+
+</div> <!-- end container -->
+
+</body>
+
+</html>

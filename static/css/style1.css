@@ -1,0 +1,97 @@
+body {
+  background: #eeeeee;
+  font-family: “Trebuchet MS”, Verdana, Arial, serif;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+}
+
+h1 {
+  font-family: “Trebuchet MS”, Verdana, Arial, serif;
+}
+
+p {
+  font-family: “Trebuchet MS”, Verdana, Arial, serif;
+  margin: 0;
+}
+
+#container{
+  position: absolute;
+  width: 800px;
+  left: 50%;
+  margin: 20px 0 0 -400px;
+  padding: 10px;
+  border: 1px solid #666;
+  background: #ffffff;
+}
+
+#header{
+  margin: 0;
+  border: 0;
+  background: #ffccff 
+}
+
+#menu{
+  padding: 20px 0px 10px 0px;
+  margin: 0;
+  border: 0;
+  background: #00ffff;
+  height: 42px
+}
+
+#content{
+  margin: 0;
+  border: 0;
+  background: #ffff33;
+  width: 100%;
+}
+
+#left{
+  margin: 0;
+  border: 0;
+  background: #9ed38f;
+  width: 70%;
+  float: left;
+}
+
+#right{
+  margin: 0;
+  border: 0;
+  background: #9eff33;
+  width: 30%;
+  float: left;
+  text-align: left;
+}
+
+#footer{
+  margin: 0;
+  border: 0;
+  background: #00ffff;
+  position: relative;
+  clear: both;
+}
+
+ul#list-nav {
+  list-style:none;
+  margin:0 0;
+  padding:0;
+  width:800px;
+}
+
+ul#list-nav li {
+  display:inline
+}
+
+ul#list-nav li a {
+  text-decoration:none;
+  padding:5px 0;
+  width:133px;
+  color:#000;
+  float:left;
+  text-align:center;
+}
+
+ul#list-nav li a:hover {
+  font-weight: bold;
+}
+
