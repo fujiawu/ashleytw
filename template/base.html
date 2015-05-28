@@ -12,19 +12,44 @@
 <div id="container"> <!-- a big container -->
 
  <div id="header">
+   {% block header_material %}
   <p align="center">Hello欢迎光临</p>
+   {% endblock %}
  </div>
 
- <div id="menu">
-   {% block menu_material %}{% endblock %}
+<div id="menu">
+   {% block menu_material %}
+    <ul id="list-nav">
+    <li><a href="/">Home主页</a></li>
+    <li><a href="/gallery">Gallery影集</a></li>
+    <li><a href="/video">Video视频</a></li>
+    <li><a href="/forum">Forum论坛</a></li>
+    <li><a href="/family-tree">FamilyTree家谱</a></li>
+    <li><a href="/contact">Contact留言</a></li>
+    </ul>
+   {% endblock %}
  </div>
- 
+
+ <div id="login-info">
+   {% block userinfo %}
+     {% if user.username %}
+         <p>Welcome, {{ user.first_name }} {{ user.last_name }} </p>
+         <a href="/logout">退出登录logout</a>
+     {% else %}
+         <a href="/login">登录login</a>
+     {% endif %} 
+   {% endblock %}
+   <span class="clear"></span>
+  </div>
+
  <div id="content">
    {% block content_material %}{% endblock %}
  </div>
 
  <div id="footer">
+   {% block footer_material %}
    <p> Copyright © ashleytw.com </p>
+   {% endblock %}
  </div>
 
 </div> <!-- end container -->

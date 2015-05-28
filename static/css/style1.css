@@ -19,7 +19,7 @@ p {
   position: absolute;
   width: 800px;
   left: 50%;
-  margin: 20px 0 0 -400px;
+  margin: 20px 0 20px -400px;
   padding: 10px;
   border: 1px solid #666;
   background: #ffffff;
@@ -31,6 +31,7 @@ p {
   background: #ffccff 
 }
 
+
 #menu{
   padding: 20px 0px 10px 0px;
   margin: 0;
@@ -39,11 +40,28 @@ p {
   height: 42px
 }
 
+#login-info{
+  margin: 0;
+  padding: 0;
+  background: #dddddd;
+  float: right;
+}
+
+p#login-info{
+  float: right;  
+}
+
+#span.clear{
+ clear: both; display: block; 
+}
+
+
 #content{
   margin: 0;
   border: 0;
   background: #ffff33;
   width: 100%;
+  float: right;
 }
 
 #left{
@@ -86,12 +104,30 @@ ul#list-nav li a {
   text-decoration:none;
   padding:5px 0;
   width:133px;
-  color:#000;
+  color:#0B0B61;
   float:left;
   text-align:center;
 }
 
 ul#list-nav li a:hover {
-  font-weight: bold;
+  color:#FF0000;
 }
 
+ul#list-nav li a:visited {
+  color:#1C1C1C;
+}
+
+#login-info a {
+  text-decoration:none;
+  padding:5px 0;
+  width:100px
+  color:#0B0B61;
+  float:left;
+  text-align:center;
+}
+
+#login-info p {
+  float:left;
+  padding:5px 10px;
+  text-align:center;
+}

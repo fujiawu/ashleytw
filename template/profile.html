@@ -3,7 +3,11 @@
   {% block content_material %}
 
  <div id="left">
-  <p>这里给我留言</p> 
+
+   <p>You have logged in您已成功登陆</p>
+   <p>username用户名: {{ user.username }}</p>
+   <p>Thank you, {{ user.first_name }} {{ user.last_name }}  谢谢！</p>
+ 
  </div> 
  <div id="right">
   <pre>

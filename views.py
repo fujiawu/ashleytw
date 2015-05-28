@@ -1,21 +1,24 @@
-from django.shortcuts import render_to_response
-
+from django.shortcuts import *
 
 def home(request):
-    return render_to_response('home.html')
-
+        return render(request, 'home.html')
+       
 def gallery(request):
-    return render_to_response('gallery.html')
-
+        return render(request, 'gallery.html')
+        
 def video(request):
-    return render_to_response('video.html')
+        return render(request, 'video.html')
 
 def forum(request):
-    return render_to_response('forum.html')
+        return render(request, 'forum.html')
+
+def family_tree(request):
+        return render(request, 'family-tree.html')
 
 def contact(request):
-    return render_to_response('contact.html')
+       return render(request, 'contact.html')
 
-def login(request):
-    return render_to_response('login.html')
+def profile(request):
+    if request.user.is_authenticated():
+        return render(request, 'profile.html')
 

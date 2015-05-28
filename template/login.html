@@ -1,22 +1,31 @@
   {% extends "base.html" %}
 
-  {% block menu_material %}
-
-   <ul id="list-nav">
-   <li><a href="/">Home主页</a></li>
-   <li><a href="/gallery">Gallery影集</a></li>
-   <li><a href="/video">Video视频</a></li>
-   <li><a href="/forum">Forum论坛</a></li>
-   <li><a href="/contact">Contact留言</a></li>
-   <li><a href="/login">Login登录</a></li> 
- </ul>
-
-  {% endblock %}
-
   {% block content_material %}
 
  <div id="left">
-  <p>这里登录</p> 
+
+  {% if form.errors %}
+    <p class="error">Sorry, that's not a valid username or password</p>
+    <p class="error">对不起，用户名或者密码不正确</p>
+  {% endif %}
+
+  <form action="" method="post">
+    {% csrf_token %}
+    <br>
+    username用户名:
+    <input type="text" name="username" value="" id="username">
+    <br>
+    password口令:
+    <input type="password" name="password" value="" id="password">
+    <br>
+    <input type="submit" value="login提交" />
+    {% if next %}
+     <input type="hidden" name="next" value="{{ next|escape }}" />
+    {% else %}
+     <input type="hidden" name="next" value="/profile" />
+    {% endif %}
+  </form>
+
  </div> 
  <div id="right">
   <pre>

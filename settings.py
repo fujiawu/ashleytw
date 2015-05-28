@@ -97,8 +97,8 @@ TEMPLATE_LOADERS = (
 MIDDLEWARE_CLASSES = (
     'django.middleware.common.CommonMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     # Uncomment the next line for simple clickjacking protection:
     # 'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -163,4 +163,10 @@ EMAIL_HOST_USER = 'ashleytw'
 EMAIL_HOST_PASSWORD = 'N2L:F=j+a'
 DEFAULT_FROM_EMAIL = 'admin@ashleytw.com'
 SERVER_EMAIL = 'admin@ashleytw.com'
+
+
+SESSION_SAVE_EVERY_REQUEST = True
+
+
+
 
